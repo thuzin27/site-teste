@@ -25,10 +25,10 @@ function atualizarTempo() {
     const horas = Math.floor(diferenca / (1000 * 60 * 60)) % 24;
     const dias = Math.floor(diferenca / (1000 * 60 * 60 * 24));
     
-    // Texto completo para telas maiores
-    const textoCompleto = `${dias} dias, ${horas} horas, ${minutos} minutos, ${segundos} segundos`;
+    // Formato sem espaços entre números e unidades
+    const textoCompleto = `${dias}dias, ${horas}horas, ${minutos}minutos, ${segundos}segundos`;
     
-    // Texto abreviado para telas menores
+    // Texto abreviado para telas menores (também sem espaços)
     const textoAbreviado = `${dias}d ${horas}h ${minutos}m ${segundos}s`;
     
     // Obtém o elemento do contador
